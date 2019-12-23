@@ -105,6 +105,7 @@ public class IndexBuilder {
 		this.sb.append("</head>");
 		this.sb.append("<body>");
 		this.sb.append("<div class=\"container\">");
+		this.sb.append("<div style=\"padding: 1em\" class=\"bg-warning\"> <p><strong>FERPA Reminder!</strong></p> <p>Exported files may contain private student information. All personal information relating to a particular student other than public records are considered private information.  Information which is considered private records includes general advising records, academic evaluations, test scores, transcripts, or other academic records. All student data exported from this tool must be properly secured.  Additional URI student privacy information and FERPA best practices can be found at: <a href=\"https://security.uri.edu/policies/ferpa/\" target=\"_blank\">https://security.uri.edu/policies/ferpa/</a>. </p> </div>");
 		this.sb.append("<h1>" + this.title + "</h1>");
 		this.sb.append("<div id=\"tree\">");
 		this.sb.append("<ul>");
