@@ -112,7 +112,7 @@ public class CreateArchivePage extends BasePage {
 
 			@Override
 			public boolean isVisible() {
-				return CreateArchivePage.this.businessService.isSuperUser();
+				return CreateArchivePage.this.businessService.isUserInstructor();
 			}
 		};
 		includeStudentData.setOutputMarkupId(true);

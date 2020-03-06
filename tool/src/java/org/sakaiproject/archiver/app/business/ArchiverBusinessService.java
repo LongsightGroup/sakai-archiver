@@ -103,6 +103,16 @@ public class ArchiverBusinessService {
 	}
 
 	/**
+	 * Is the current user an instructor?
+	 *
+	 * @return
+	 */
+	public boolean isUserInstructor() {
+		final User user = this.userDirectoryService.getCurrentUser();
+		return isSuperUser() || this.securityService.unlock(user, "section.role.instructor", "/site/" + getCurrentSiteId());
+	}
+
+	/**
 	 * Get the user's preferred locale from the Sakai resource loader
 	 *
 	 * @return
